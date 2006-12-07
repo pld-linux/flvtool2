@@ -2,7 +2,7 @@
 Summary:	Manipulation tool for Macromedia Flash Video files
 Name:		flvtool2
 Version:	1.0.5
-Release:	0.1
+Release:	0.2
 License:	BSD
 Group:		Applications
 Source0:	http://rubyforge.org/frs/download.php/9225/%{name}_%{version}_%{_rc}.tgz
@@ -32,6 +32,9 @@ rm -rf $RPM_BUILD_ROOT
 ruby setup.rb install \
 	--prefix=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -54,3 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %{ruby_rubylibdir}/flvtool2/version.rb
 %{ruby_rubylibdir}/mixml.rb
 %{ruby_rubylibdir}/miyaml.rb
+
+%{_examplesdir}/%{name}-%{version}
