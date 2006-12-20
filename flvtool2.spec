@@ -9,7 +9,7 @@ Group:		Applications/Multimedia
 Source0:	http://rubyforge.org/frs/download.php/9225/%{name}_%{version}_%{_rc}.tgz
 # Source0-md5:	6cf448db50936251992b4812b6381f69
 URL:		http://rubyforge.org/projects/flvtool2/
-BuildRequires:	rpmbuild(macros) >= 1.272
+BuildRequires:	rpmbuild(macros) >= 1.279
 BuildRequires:	ruby
 %{?ruby_mod_ver_requires_eq}
 #BuildArch:	noarch
