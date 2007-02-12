@@ -1,6 +1,6 @@
 %define		_rc	rc6
 Summary:	Manipulation tool for Macromedia Flash Video files
-Summary(pl):	Narzêdzie do obróbki plików Macromedia Flash Video
+Summary(pl.UTF-8):   NarzÄ™dzie do obrÃ³bki plikÃ³w Macromedia Flash Video
 Name:		flvtool2
 Version:	1.0.5
 Release:	0.2
@@ -21,11 +21,11 @@ FLVTool2 is a manipulation tool for Macromedia Flash Video files
 cut FLV files, add cue points (onCuePoint), show the FLV structure and
 print meta data information in XML or YAML.
 
-%description -l pl
-FLVTool2 to narzêdzie do obróbki plików Macromedia Flash Video (FLV).
-Potrafi obliczaæ wiêkszo¶æ metadanych, wstawiaæ znaczniki onMetaData,
-ci±æ pliki FLV, dodawaæ punkty wskazañ (onCuePoint), pokazywaæ
-strukturê FLV i wypisywaæ informacje o metadanych w formacie XML lub
+%description -l pl.UTF-8
+FLVTool2 to narzÄ™dzie do obrÃ³bki plikÃ³w Macromedia Flash Video (FLV).
+Potrafi obliczaÄ‡ wiÄ™kszoÅ›Ä‡ metadanych, wstawiaÄ‡ znaczniki onMetaData,
+ciÄ…Ä‡ pliki FLV, dodawaÄ‡ punkty wskazaÅ„ (onCuePoint), pokazywaÄ‡
+strukturÄ™ FLV i wypisywaÄ‡ informacje o metadanych w formacie XML lub
 YAML.
 
 %prep
