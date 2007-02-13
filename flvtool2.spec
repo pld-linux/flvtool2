@@ -1,6 +1,6 @@
 %define		_rc	rc6
 Summary:	Manipulation tool for Macromedia Flash Video files
-Summary(pl.UTF-8):   Narzędzie do obróbki plików Macromedia Flash Video
+Summary(pl.UTF-8):	Narzędzie do obróbki plików Macromedia Flash Video
 Name:		flvtool2
 Version:	1.0.5
 Release:	0.2
