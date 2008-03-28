@@ -3,7 +3,7 @@ Summary:	Manipulation tool for Macromedia Flash Video files
 Summary(pl.UTF-8):	Narzędzie do obróbki plików Macromedia Flash Video
 Name:		flvtool2
 Version:	1.0.5
-Release:	0.2
+Release:	1
 License:	BSD
 Group:		Applications/Multimedia
 Source0:	http://rubyforge.org/frs/download.php/9225/%{name}_%{version}_%{_rc}.tgz
