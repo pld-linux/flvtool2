@@ -1,14 +1,14 @@
-%define		_rc	rc6
 Summary:	Manipulation tool for Macromedia Flash Video files
 Summary(pl.UTF-8):	Narzędzie do obróbki plików Macromedia Flash Video
 Name:		flvtool2
-Version:	1.0.5
+Version:	1.0.6
 Release:	1
 License:	BSD
 Group:		Applications/Multimedia
-Source0:	http://rubyforge.org/frs/download.php/9225/%{name}_%{version}_%{_rc}.tgz
-# Source0-md5:	6cf448db50936251992b4812b6381f69
+Source0:	http://rubyforge.org/frs/download.php/17497/%{name}-%{version}.tgz
+# Source0-md5:	08e5f6f10c06903447d97d7ba10cec67
 URL:		http://rubyforge.org/projects/flvtool2/
+Patch0:		%{name}-ruby19.patch
 BuildRequires:	rpmbuild(macros) >= 1.279
 BuildRequires:	ruby
 BuildRequires:	ruby-modules
@@ -30,7 +30,8 @@ strukturę FLV i wypisywać informacje o metadanych w formacie XML lub
 YAML.
 
 %prep
-%setup -q -n %{name}_%{version}_%{_rc}
+%setup -q -n %{name}-%{version}
+%patch0 -p1
 
 %build
 ruby setup.rb config \
