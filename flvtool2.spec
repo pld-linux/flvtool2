@@ -11,6 +11,7 @@ Source0:	http://rubyforge.org/frs/download.php/9225/%{name}_%{version}_%{_rc}.tg
 URL:		http://rubyforge.org/projects/flvtool2/
 BuildRequires:	rpmbuild(macros) >= 1.279
 BuildRequires:	ruby
+BuildRequires:	ruby-modules
 %{?ruby_mod_ver_requires_eq}
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
