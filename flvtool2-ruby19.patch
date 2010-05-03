@@ -1,10 +1,12 @@
 --- flvtool2-1.0.6/setup.rb~	2006-10-10 23:46:57.000000000 +0300
-+++ flvtool2-1.0.6/setup.rb	2010-05-01 14:11:48.846696545 +0300
-@@ -1311,6 +1311,7 @@
++++ flvtool2-1.0.6/setup.rb	2010-05-03 13:51:01.395678449 +0300
+@@ -1311,6 +1311,9 @@
        File.open(path) {|f|
          line = f.gets
        }
-+      line.force_encoding('ASCII-8BIT')
++	  if RUBY_VERSION >= "1.9"
++		  line.force_encoding('ASCII-8BIT')
++	  end
        return nil unless /\A#!/ =~ line
        parse(line)
      end
